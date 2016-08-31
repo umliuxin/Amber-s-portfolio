@@ -30,15 +30,15 @@
     <div class="navbar navbar-fixed-top" role="navigation" id="navi-section">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-id">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-img" href="index.html"><img src="img/Logo1.png"/></a>
+          <a class="navbar-logo" href="index.html"><img src="img/logo.png"/><div class='logo-name'>Amber Lin</div><div class='logo-title'>UX/UI Designer</div></a>
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbar-collapse-id">
           <ul id="navi-menu" class="nav navbar-nav">
             <!-- <li class="active"><a href="#">Home</a></li> -->
             <li class="active"><a href="index.html">Portfolio</a></li>
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div id="content-section" class="container">
+    <div class="container">
       <div class="row" id="title-row">
         <div id="title-text-section" class="col-xs-12">
           <div><h1 class="title-text clearfix">AiM Inspect</h1><h3 class='subtitle-text'>Android App Design</h3></div>
@@ -98,45 +98,47 @@
       <div class="row" id="content-row">
         <div class="col-xs-12" id="text-section">
           <h3>Overview</h3>
-          <p>AiM Schedule is an Android app designed for car inspectors to check their daily schedule, look up appointment details, update inspection status, and see the time blocks for the next 5 days.</p>
+          <p>AiM Inspect is an Android app designed for car inspectors to collect all the vehicle data, keep track of damage condition, capture required photos, and upload report to cloud.</p>
           <h3>User Group</h3>
-          <p>AiM car inspector</p>
+          <p>AiM car inspectors</p>
           <ul>
             <li>Different experience level</li>
             <li>Working in diverse circumstances</li>
             <li>Not always tech-savvy</li>
           </ul>
           <h3>Existing Legacy System</h3>
-          <p>AiM has a set of software installed in Toughbook for auto inspection use, which has been using in the past 20 years. Currently, our car inspectors are still using one of this software in Toughbook to check their daily schedule, look up appointment detail, and update inspection status.</p>
+          <p>AiM has a set of software installed in Toughbook for auto inspection use, which has been using for the past 20 years. Currently, our car inspectors are still using one of the software to collect all the vehicle data, using a digital camera to take required pictures then upload to Toughbook, using a Mifi to connect a printer, and printing out condition report. That is to say, to finish each inspection, inspectors need to carry a chunky Toughbook, a digital camera, a MiFi device, and a printer with them, which is very time-consuming and inefficient.</p>
           <p>The main problems for existing system are:</p>
           <ul>
-            <li>For all appointments in the same location, the user needs to navigate back and forth to gather information needed</li>
-            <li>No connection between phone and Toughbook</li>
-            <li>Appointment does not update immediately</li>
+            <li>Carrying too many devices</li>
+            <li>Circling around the car for too many times</li>
+            <li>Too many drop down selections for collecting data</li>
+            <li>Did not consider different experience level</li>
           </ul>
 
           <h3>Design Ideas</h3>
-          <p>Even the main functionalities will stay the same, replacing the existing system by a smart phone and redesigning the user flow will provide a better user experience and let inspectors work more efficiently:</p>
+          <p>To make our car inspectors’ life easier and make the whole inspection process more efficient, we decided to replace Toughbook and digital camera by a smart phone; and instead of printing out condition report, we upload all the information to cloud. Moreover, to make the workflow more fluent and data collection more accurate, we also:</p>
           <ul>
-            <li>Show important data in the primary position</li>
-            <li>Group necessary information together</li>
-            <li>Integrate phone/map functionalities with the phone</li>
-            <li>Keep data up-to-date, get in-time notification for appointment update</li>
+            <li>Reorganize backend data</li>
+            <li>Customize user interface by following different manufactures’ guideline</li>
+            <li>Redesign the way collecting damage information</li>
+            <li>Redesign user flow to fit for different use cases</li>
+            <li>Reduce the number of walking around the car</li>
           </ul>
 
           <h3>Design Process</h3>
           <h5>Be empathetic - field observation</h5>
-          <p>To know more about our car inspectors’ current process, I rode along with several inspectors to observe their workflow and understand their pain points. Also, I spent sometime playing with the existing legacy system to know how it works today.</p>
+          <p>To know more about our car inspectors’ current process, I rode along with several inspectors to observe their workflow and understand their pain points. Also, I spent some time playing with the old system to know how it works today.</p>
           <h5>Ideation</h5>
           <p>After gathering enough information from research and business requirements from stakeholders, I sketched some ideas and used them as the base of conversation with the team.</p>
           <h5>Prototype</h5>
-          <p>After discussing with the team, we narrowed down to 2 ideas that we want to present to users. I created hi-fi prototypes and interaction workflow for best presenting our ideas to users in the UX session.</p>
+          <p>After several sketches and discussion with the team, I decided to follow our existing system’s pattern, including vehicle configuration tab, accessories tab, tire tab, damage tab, condition tab, comment tab and summary tab, but regrouping and changing the way how we collect data. I created hi-fi prototypes for each tab and the overall workflow for best presenting our ideas.</p>
           <h5>Evaluation</h5>
-          <p>We conduct UX session every two weeks and invite 5 real users and 2 stakeholders in house to validate our ideas. In the UX session, we would present our ideas and let users share what they like, what they don’t like, and what will make it better. After each session, we would have a quick debriefing to make sure we gathered all the information we need; and I would modify my mockups based on users’ feedback.</p>
+          <p>We conduct UX sessions every two weeks and invite 5 real users and 2 stakeholders in house to validate our ideas. Depending on different stages of the project, sometimes we present ideas to users and let them share their thoughts; sometimes we do user-testing, and let them play with the app on the phone. After each session, we would have a quick debriefing to make sure we gathered all the information we need; and I would modify my mockups based on users’ feedback. We also run several pilots in the fields to validate the workflow.</p>
           <h5>Final design</h5>
-          <p>After couple rounds of UX sessions and modifications, I delivered my final design. My design follows Material Design Guidelines to provide our user a consistent user experience when navigating between different Android apps. </p>
+          <p>After couple rounds of UX sessions, user testing and modifications, I delivered my final design. My design follows Material Design Guidelines to provide our user a consistent user experience when navigating between different Android apps.</p>
 
-          <p><small>This is an ongoing project that we keep working with product managers, developers, quality assurance engineers, and users to make sure the app is working as what we designed. We also work on adding more features in the near future.</small></p>
+          <p><small>This is an ongoing project that we still work with different manufactures to implement different guidelines. We keep working with product managers, developers, quality assurance engineers, and users to make sure the app is working as what we designed.</small></p>
 
           <p><small>Due to confidentiality agreement, I couldn't show my works online. But I’d love to share more details offline.</small></p>
         </div>
@@ -148,9 +150,10 @@
       <div class="container">
         <p class="footer-text">All Right Reserved © Amber Lin 2016</p>
         <div class="footer-social">
-          <a href="http://instagram.com/yuhsuanl" target="_blank"><img src="img/social/Instagram.png" class="social-icon" /></a>
-          <a href="https://www.facebook.com/yuhsuanlin616" target="_blank"><img src="img/social/facebook.png" class="social-icon" /></a>
+          <a href="mailto:imbeckybecky@gmail.com"><img src="img/social/email.png" class="social-icon" /></a1>
+          
           <a href="https://www.linkedin.com/in/yuhlin/" target="_blank"><img src="img/social/linkedin.png" class="social-icon" /></a>
+          <a href="mailto:imbeckybecky@gmail.com"><img src="img/social/email.png" class="social-icon" /></a>
         </div>
       </div>
     </div>

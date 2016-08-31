@@ -1,0 +1,31 @@
+@media screen and (max-width: $screen-sm) {
+    #navi-section.navbar .navbar-logo{
+      padding-left: 70px;
+      img{
+        left: 10px;
+        width:50px;
+      }
+      .logo-name{
+        font-size: 28px;
+        line-height: 36px;
+      }
+      .logo-title{
+        font-size:14px;
+      }
+    }
+
+    #navi-section.navbar .navbar-toggle{
+      margin-right: 10px;
+      margin-top: 30px;
+    }
+
+    #navi-section.navbar .navbar-nav{
+      float: none;
+      position: static;
+      text-align: center;
+    }
+
+    body > .container{
+      margin-top: 110px;
+    }
+}

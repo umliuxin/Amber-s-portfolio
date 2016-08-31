@@ -30,15 +30,15 @@
     <div class="navbar navbar-fixed-top" role="navigation" id="navi-section">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-id">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-img" href="index.html"><img src="img/Logo1.png"/></a>
+          <a class="navbar-logo" href="index.html"><img src="img/logo.png"/><div class='logo-name'>Amber Lin</div><div class='logo-title'>UX/UI Designer</div></a>
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbar-collapse-id">
           <ul id="navi-menu" class="nav navbar-nav">
             <!-- <li class="active"><a href="#">Home</a></li> -->
             <li class="active"><a href="index.html">Portfolio</a></li>
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div id="content-section" class="container">
+    <div class="container">
       <div class="row" id="title-row">
         <div id="title-text-section" class="col-xs-12">
           <div><h1 class="title-text clearfix">AiM CRM</h1><h3 class='subtitle-text'>Web Design</h3></div>
@@ -97,39 +97,33 @@
       </div>
       <div class="row" id="content-row">
         <div class="col-xs-12" id="text-section">
-          <p>I am currently a UX/UI designer at <a class='link-text' href='http://homepage.aiminspections.com/' target="_blank"> Alliance Inspection Management (AiM) </a> - JDP team, striving to create several mobile applications to make car inspectors’ life easier.</p>
-          <br>
-          <p>AiM is a premier new and pre-owned vehicle inspection company with 500+ inspectors nationwide. Currently, car inspectors need to carry a heavy Toughbook, a digital camera, and a printer with them to finish each inspection. They use Toughbook to check their daily schedule and enter vehicle data; they use digital camera to capture all required pictures; and they use printer to print out condition report.</p>
-          <br>
-          <p>To make our car inspectors’ life easier, we decided to replace Toughbook and digital camera by a smartphone. We are designing two apps (eventually, they will integrate into one app) which users can check schedule, update status, and capture data more accurately and efficiently in just one device.</p>
-          <br>
-          <p>So, these two apps are the two mobile design projects I am working on now:</p>
-          <br>
-          <p class="green">AiM Schedule (In Production)</p>
-          <p>An android app which car inspectors can check their daily schedule and update their status</p>
-          <br>
-          <p class="green">AiM Inspect (Pilot)</p>
-          <p>An Android app which car inspectors can collect all vehicle information (Trim info, tire, damage, condition, pictures, etc.) and upload data to cloud.<p>
-          <br>
-          Additionally, I’m also working on the other web design project:</p>
-          <br>
-          <p class="green">CRM</p>
-          <p>A website which our customer can request inspection online, dispatch team can schedule appointment, and data management team can manage all records.</p>
-          <br>
-          <h4>Design Process</h4>
-          <img class="" src="img/pic/aim_designprocess.png"/>
+          <h3>Overview</h3>
+          <p>AiM is a new car and pre-owned vehicle inspection company with 1200+ inspectors nationwide. AiM offers both consumer and dealer-based car inspections, and a complete floorplan audit service. Thus, we receive tons of inspection requests everyday and we need a system to schedule appointment and manage all these requests. AiM CRM is a SaaS web platform for internal users to manage all requests and customer information.</p>
+          
+          <h3>User Group</h3>
+          <p>AiM call center</p>
+          <p>AiM Customer Service Representative</p>
+          <p>AiM Dispatch team</p>
+          
+          <h3>Current CRM</h3>
+          <p>Current CRM has three groups of users: Call center users, Customer service representative (CSR) users, and Dispatch users. Call center users receive calls from customers, create new request or schedule appointment; CSR users handle requests which are unable to schedule or play the bridge role between customers and Dispatch people; and Dispatch users are who have the real control of ClickSoftware (the outsourcing scheduling system), can do all the magic work in the scheduling system and make sure appointments are sit well for both customers and inspectors.</p>
+          <p>Even though current CRM handles most of the request management work, it has a complicated workflow and confused user interface, which obviously slow the process.</p>
 
-          <h4>My Responsibilities</h4>
-          </br>
-          <p>• Wireframe user flow, sketch ideas, create web and mobile hi-fi prototypes</p>
-          <p>• Define UX and generate UI design patterns for all products by following material design guidelines</p>
-          <p>• Data Visualization</p>
-          <p>• Flat car design</p>
-          <p>• App icon design<p>
+          <h3>Design Process</h3>
+          <h5>Research</h5>
+          <p>To better understand our users’ current process, we have a weekly meeting with stakeholders to know every part of their workflow, different use cases, and their pain points. Also, I spent sometime playing with the old CRM to know how it works today.</p>
+          <h5>Ideation</h5>
+          <p>After gathering enough information from research and business requirements from stakeholders, I sketched some ideas and draw user flows; and used them as the base of conversation with the team.</p>
+          <h5>Prototype</h5>
+          <p>After several sketches and discussion with the team, I created hi-fi prototypes for best presenting our ideas to stakeholders.</p>
+          <h5>Development</h5>
+          <p>For this project, we want something quick and dirty. Developers implement my design instantly after getting approval from stakeholders, and deploy new features every week.</p>
+          <h5>Evaluation</h5>
+          <p>The weekly meeting with stakeholders and users is a great opportunity to know how everything goes. After every meeting, the team will come out a to-do list based on users’ feedback, and I will modify my mockups upon request.</p>
 
-          <br>
-          <br>
-          <p>Due to confidentiality agreement, I cannot show my screens online. But I am willing to share more my work experiences offline!</p>
+          <p><small>This is an ongoing project that we keep working with product managers, developers, quality assurance engineers, and users to make sure the website is working as what we designed. We also keep adding more features in our weekly deployment.</small></p>
+
+          <p><small>Due to confidentiality agreement, I couldn't show my works online. But I’d love to share more details offline.</small></p>
         </div>
 
       </div>
@@ -139,8 +133,8 @@
       <div class="container">
         <p class="footer-text">All Right Reserved © Amber Lin 2016</p>
         <div class="footer-social">
-          <a href="http://instagram.com/yuhsuanl" target="_blank"><img src="img/social/Instagram.png" class="social-icon" /></a>
-          <a href="https://www.facebook.com/yuhsuanlin616" target="_blank"><img src="img/social/facebook.png" class="social-icon" /></a>
+          <a href="mailto:imbeckybecky@gmail.com"><img src="img/social/email.png" class="social-icon" /></a1>
+          
           <a href="https://www.linkedin.com/in/yuhlin/" target="_blank"><img src="img/social/linkedin.png" class="social-icon" /></a>
         </div>
       </div>
