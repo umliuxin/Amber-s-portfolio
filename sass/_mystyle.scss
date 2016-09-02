@@ -176,7 +176,7 @@ body > .container{
      .item-title{
         display: inline-block;
         color: $text-color;
-        min-width: 100px;
+        min-width: 110px;
      }
      .item-content{
        display: inline-block;
@@ -186,6 +186,7 @@ body > .container{
 }
 
 .detail-wrap{
+  margin-bottom: 20px;
   h3{
     color: $brand-primary;
     margin-top: 28px;
@@ -205,6 +206,36 @@ body > .container{
       color: $brand-primary;
       font-weight: $semi-bold-font-weight;
       font-style: italic;
+  }
+
+  .full-width-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .block-list{
+    margin-bottom: 20px;
+    li{
+      margin-bottom: 10px;
+    }
+  }
+
+  .img-text-big-section{
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    img{
+      margin: 0 auto;
+      width:90%;
+      height: auto;
+    }
+    img + p {
+      margin-bottom: 10px;
+    }
+    img + img {
+      margin-bottom: 20px;
+    }
+
   }
 }
 
