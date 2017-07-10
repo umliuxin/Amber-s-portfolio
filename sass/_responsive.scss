@@ -28,4 +28,33 @@
     body > .container{
       margin-top: 110px;
     }
+
+    #section_about_me{
+      h1{
+        margin-left: 0;
+      }
+      h4{
+        margin:0;
+        padding:10px;
+        width: auto;
+      }
+    }
+}
+@media only screen and (max-width: 480px) {
+  .footer{
+    &{
+      text-align: center;
+      height:90px;
+    }
+    .footer-social {
+      margin-top: 10px;
+      position: relative;
+      top:0;
+      right:0;
+    }
+    p {
+      line-height: 38px;
+    }
+  }
+
 }

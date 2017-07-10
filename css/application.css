@@ -5987,6 +5987,18 @@ body > .container {
     margin-top: 5px; }
 
 /*About Me*/
+#section_about_me h1 {
+  font-size: 50px;
+  margin-left: 2%; }
+#section_about_me h4 {
+  color: #4d4d4d;
+  width: 92%;
+  margin-left: 8%;
+  font-weight: 300;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 1.4; }
+
 .about-img {
   width: 92%;
   margin-top: 100px;
@@ -6020,6 +6032,24 @@ object {
     text-align: center; }
 
   body > .container {
-    margin-top: 110px; } }
+    margin-top: 110px; }
+
+  #section_about_me h1 {
+    margin-left: 0; }
+  #section_about_me h4 {
+    margin: 0;
+    padding: 10px;
+    width: auto; } }
+@media only screen and (max-width: 480px) {
+  .footer {
+    text-align: center;
+    height: 90px; }
+  .footer .footer-social {
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+    right: 0; }
+  .footer p {
+    line-height: 38px; } }
 
 /*# sourceMappingURL=application.css.map */
